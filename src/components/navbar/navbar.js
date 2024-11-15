@@ -1,7 +1,7 @@
 import Link from "next/link";
 import style from "./navbar.module.css";
 import Image from "next/image";
-import frameImage2 from "../../../public/navbar/novatech logo.png";
+import frameImage2 from "../../../public/navbar/NovaTech logo.png";
 
 export default function Navbar() {
   return (
