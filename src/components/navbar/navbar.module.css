@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;  
+  font-weight: bolder;
+}
+
+.navbar a {
+  font-size: 16px;
+  color: black;
+}
+
+.topNavbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.centeredItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-left: 0.5rem;
+}
+
+.novatech {
+  text-decoration: none;
+}
+
+.rightTopNavbar {
+  width: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.contact {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 16px;
+}
+
+.quoteButton {
+  background-color: rgb(206, 205, 205);
+  border-radius: 5px;
+  border-style: none;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bolder;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  outline: none;
+  padding: 10px 25px 10px 25px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.quoteButton:hover,
+.quoteButton:focus {
+  background-color: rgb(226, 226, 225);
+}
+
+.loginButton {
+  background-color: rgb(206, 205, 205);
+  border-radius: 5px;
+  border-style: none;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  font-size: 16px;
+  font-weight: bolder;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  outline: none;
+  padding: 10px 30px 10px 30px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.loginButton:hover,
+.loginButton:focus {
+  background-color: rgb(226, 226, 225);
+}
+
+.menu {
+  float: left;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  width: 80px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.menu .menup {
+  height: 35px;
+  margin: 0 auto;
+  padding: 0px;
+  align-content: center;  
+}
+
+.menu li {
+  float: left;
+  position: relative;
+  padding: 6px 0;
+  margin: 0;
+  list-style: none;
+  padding-bottom: 8px;
+  /* background-color: rgb(177, 169, 169); */
+  border-radius: 10px; 
+}
+
+.menu li a {
+  font-size: 16px;
+  text-decoration: none;
+
+}
+
+.dropdownMain{
+padding: 25px 0px 25px 0px;
+}
+
+/*ocultamos el dropdown*/
+.menu li > ul {
+  display: none;
+  position: absolute;
+  padding: 0 12px; 
+  z-index: 2;
+  /* width: 280px;   */
+  border-radius: 0 0 10px 10px;
+  background-color: white;
+}
+
+.menu li > ul li {
+  padding: 0;
+  margin: 1px 0;
+  list-style: none;
+}
+
+.menu li > ul li:first-child,
+.menu li:hover > ul li:last-child {
+  padding: 10px 0;
+  margin-right: 10px;
+  margin: 0 0;
+}
+
+.menu li:hover > a {
+  color: rgb(97, 209, 227);
+  width: 200px;
+}
+
+.menu li > ul li a {
+  width: 200px;
+  margin: 0 0 0 5px;
+  display: block;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.menu li:hover > ul {
+  display: block;
+  width: 200px;
+  top: 35px;
+  padding-bottom: 3px;
+  color: rgb(97, 209, 227);
+  left: -22px; 
+}
+
+.menu .dropdown::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 70px;
+  height: 0px;
+  border-style: solid;
+  border-width: 4.3px;
+  border-bottom-width: 0px;
+  border-color: #bcbcbc transparent transparent transparent;
+}
+
+.menu li:hover::after {
+  border-color: rgb(97, 209, 227) transparent transparent transparent;
+}
+
+.menu .dropdown span {
+  height: 5px;
+  width: 3px;
+  position: absolute;
+  top: 6px;
+  left: 5px;
+}
+
+.sections {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.sectionsOption {
+  font-family: 'Roboto', sans-serif;
+  width: 70px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.sectionsOption:hover,
+.sectionsOption:focus {
+  color: rgb(97, 209, 227);
+}
+
+.hidden {
+  display: none;
+}
+
+.sections img {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.about.sectionsOption {
+  padding-left: 0;
+}
+
+.labelContainer {
+  position: relative;
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  font-size: 16px;
+  border-radius: 0;
+}
+
+.rightLowNavbar > div:not(:last-child) {
+  margin-right: 20px;
+}
+
+.rightLowNavbar {
+  display: flex;
+  align-items: center;
+}
+
+.service {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.service h3 {
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.demoButton {
+  background-color: #0000;
+  border-style: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  height: 70px;
+  line-height: 20px;
+  margin-left: 2rem;
+  outline: none;
+  padding: 10px 50px 10px 50px;
+  text-align: center;
+  transition: color 100ms;
+  touch-action: manipulation;
+}
+
+.demoButton:hover,
+.demoButton:focus {
+  background-color: rgb(241, 241, 240);
+}
+
+@media screen and (max-width: 768px) {
+  .demoButton,
+  .loginButton,
+  .quoteButton,
+  .contact,
+  .hiddenResponsive {
+    display: none;
+  }
+
+  .topNavbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .centeredItems {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .Navbar {
+    width: 100vmax;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  .sectionsOption,
+  .menu,
+  .menup,
+  .ul,
+  .li {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .sectionsOption h2{
+    color: rgb(97, 209, 227);
+    font-size: 16px;
+    height: 7px;
+    padding-bottom: 10px;
+  }
+
+  .sections {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 20px;
+  }
+
+  .menu {
+    width: auto;
+    margin-right: 18px;
+  }
+
+  .menu li > ul {
+    top: 30px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .hidden {
+    display: flex;
+    align-items: center;
+  }
+
+  .nothidden{
+    display: none;
+  }
+
+  .rightLowNavbar {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+
+  .service {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .service h3 {
+    margin-right: 10px;
+  }
+}

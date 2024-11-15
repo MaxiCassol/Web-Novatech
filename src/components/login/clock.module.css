@@ -1,0 +1,20 @@
+.clock_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.time{
+  font-size: 60px;
+  font-weight: medium;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.date {
+  font-size: 48px;
+  margin: 0
+}
+

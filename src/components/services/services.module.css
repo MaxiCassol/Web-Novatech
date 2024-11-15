@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #1f3b4d;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+
+.service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  padding: 8%;
+}
+
+.service div {
+  width: 50%;
+}
+
+.service h3 {
+  font-family: "Montserrat";
+}
+
+.service img {
+  display: flex;
+  margin-left: auto;
+}
+
+.service Image {
+  display: flex;
+  margin-left: auto;
+}
+
+.drive {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  max-width: 1200px;
+  padding: 8%;
+}
+
+.drive div {
+  width: 50%;
+}
+
+.drive h3 {
+  font-family: "Montserrat";
+}
+
+.container span {
+  background-color: #00a896;
+  padding: 1%;
+  border-left: 5px solid black;
+}
+
+.container h3 {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.container p {
+  font-size: 18px;
+  margin: 32px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    text-align: center;
+  }
+
+  .container img {
+    display: none;
+  }
+
+  .service div {
+    width: auto;
+  }
+
+  .drive div {
+    width: auto;
+  }
+
+  .container p {
+    font-size: 18px;
+    margin: 16px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container h3 {
+    font-size: 24px;
+  }
+
+  .container p {
+    font-size: 16px;
+  }
+
+  .container img {
+    width: 80%;
+  }
+}

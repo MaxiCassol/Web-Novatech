@@ -1,0 +1,130 @@
+.container {
+  margin: 0;
+}
+
+.header {
+  background-image: url("/about/banner1.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  color: white;
+  font-size: 48px;
+}
+
+.carrier_container {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  margin: 50px auto;
+  margin-top: 100px;
+}
+
+.carrier_container p {
+  font-size: 18px;
+}
+
+.shipper_container {
+  max-width: 900px;
+  width: 100%;
+  color: #1c1f35;
+  text-align: left;  
+  margin: 50px auto;
+}
+
+
+.shipper_container h3 {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+.shipper_container p {
+  font-size: 18px;
+  margin: 32px 0;
+}
+
+.background_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.always_active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 100px 0;
+}
+
+.always_active div {
+  width: 50%;
+}
+
+.always_active img {
+  display: flex;
+  margin-left: auto;
+}
+
+
+.we_drive {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  max-width: 1200px;
+  margin: 100px 0;
+}
+
+.we_drive div {
+  width: 50%;
+}
+
+.we_drive img {
+  display: flex;
+  margin-right: auto;
+}
+
+@media(max-width: 768px){
+  .carrier_container {
+    max-width: 400px;
+    text-align: center;
+    margin: 50px auto;
+  }
+
+  .shipper_container {
+    text-align: center;
+  }
+
+  .shipper_container img{
+    display: none;
+  }
+
+  .always_active {
+    margin: 50px 0;
+  }
+
+  .always_active div {
+    width: auto;
+  }
+
+  .we_drive {
+    margin: 50px 0;
+  }
+  
+  .we_drive div{
+    width: auto;
+  }
+
+
+
+}
