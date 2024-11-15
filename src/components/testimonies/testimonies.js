@@ -28,7 +28,7 @@ export default function Testimonials() {
       <div className={style.testimonialsContainer}>
         {testimonials.map((testimonial, index) => (
           <div className={style.testimonialCard} key={index}>
-            <p className={style.quote}>"{testimonial.quote}"</p>
+            <p className={style.quote}>{testimonial.quote}</p>
             <h4 className={style.name}>{testimonial.name}</h4>
             <span className={style.position}>{testimonial.position}</span>
           </div>

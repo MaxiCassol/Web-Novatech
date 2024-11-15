@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import Clock from "@/components/login/Clock";
 import style from "./page.module.css";
-import frameImage from "../../../../public/navbar/Novatechovatech logo.png";
+import frameImage from "../../../../public/navbar/novatech-logo.png";
+
 
 export default function Login() {
   // const handleSubmit = async (e) => {
