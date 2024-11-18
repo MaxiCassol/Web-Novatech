@@ -3,6 +3,7 @@ import Button from "@/components/Button/Button";
 import Image from "next/image";
 import frameImage1 from "../../../../public/about/buy.png";
 import frameImage2 from "../../../../public/about/Join.jpg";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -36,7 +37,9 @@ const About = () => {
           support our experience and dedication to the highest quality
           standards.
         </p>
-        <Button>CONTACT</Button>
+        <Link role="button" href="\#contact-section">
+          <Button>CONTACT</Button>
+        </Link>
       </section>
       <section className={style.shipper_container}>
         <div className={style.background_container}>
@@ -56,13 +59,12 @@ const About = () => {
                 today and start your journey with a partner dedicated to
                 excellence.
               </p>
-              <Button>CONTACT</Button>
+              <Link role="button" href="\#contact-section">
+                <Button>CONTACT</Button>
+              </Link>
             </div>
             <div>
-              <Image
-                  src={frameImage1}
-                  alt="choose us"
-                  width={400}></Image>
+              <Image src={frameImage1} alt="choose us" width={400}></Image>
             </div>
           </div>
         </div>
@@ -82,13 +84,12 @@ const About = () => {
               and be part of a team that values trust, creativity, and
               continuous growth.
             </p>
-            <Button>JOIN US</Button>
+            <Link role="button" href="\#contact-section">
+              <Button>JOIN US</Button>
+            </Link>
           </div>
           <div>
-            <Image
-                  src={frameImage2}
-                  alt="choose us"
-                  width={400}></Image>
+            <Image src={frameImage2} alt="choose us" width={400}></Image>
           </div>
         </div>
       </section>
